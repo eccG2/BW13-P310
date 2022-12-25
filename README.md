@@ -30,7 +30,7 @@ The main source code of our algorithms are distributed in different folders.  Th
 
 ### Benckmarks and comparisons
 * Benckmarks: Timing results can be obtained by performing the following commands：
-![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/A.png)
+
   
 
   1. mkdir build && cd build 
@@ -53,7 +53,8 @@ The main source code of our algorithms are distributed in different folders.  Th
 bit Intel Core i9-12900K @2.3GHz processor running Ubuntu 22.04.1 LTS with
 TurboBoost and hyper-threading features disabled. Clock cycles are obtain averaged over 10,000 executions. 
   
-  
+  ![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/A.png)
+  ![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/B.png)
   
   
   

@@ -30,6 +30,7 @@ The main source code of our algorithms are distributed in different folders.  Th
 
 ### Benckmarks and comparisons
 * Benckmarks: Timing results can be obtained by performing the following commands：
+![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/A.png)
   
 
   1. mkdir build && cd build 

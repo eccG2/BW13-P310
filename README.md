@@ -26,7 +26,7 @@ The main source code of our algorithms are distributed in different folders.  Th
 * fp13_exp_gt(fp13_t h1, fp13_t h0,  bn_t k) : given a random point $h0\in \mathbb{G}_T$ and a random exp $k$, computing $h1={h0}^k$
 * g1_is_valid_bw13(ep_t p): Checking whether $p$ is a point of $\mathbb{G}_1$.
 * g2_is_valid_bw13(ep13_t q): Checking whether $q$ is a point of $\mathbb{G}_2$.
-* gt_is_valid_bw13(fp13_t h0):Checking whether $h0$ is a point of $\mathbb{G}_T$.
+* gt_is_valid_bw13(fp13_t h0):Checking whether $h0$ is a element of $\mathbb{G}_T$.
 
 ### Benckmarks and comparisons
 * Benckmarks: Timing results can be obtained by performing the following commands：

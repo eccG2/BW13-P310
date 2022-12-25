@@ -37,14 +37,19 @@ The main source code of our algorithms are distributed in different folders.  Th
   3. make
   4. cd bin 
   5. ./bench_pc_bw13.c
- * Comparisons: With the development of NFS, the parameters of curves have to upated to really reach the 128-bit security level. BW13-P310 is 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$. BN-P446 and BLS12-P446 are two mainstream curves  in BN and BLS12 families the 128-bit security level, respectievly. see [1](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19),[2](https://link.springer.com/article/10.1007/s00145-018-9280-5), [3](https://eprint.iacr.org/2019/485.pdf) for details.[RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic)  has provided high speed implementations for all building blocks related to pairing protocols on these curves. Timing results can be obtained by performing the following commands：
- *  1. mkdir build && cd build 
+ * Comparisons: With the development of NFS, the parameters of curves have to upated to really reach the 128-bit security level. BW13-P310 is 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$. BN-P446 and BLS12-P446 are two mainstream curves in BN and BLS12 families the 128-bit security level, respectievly. See [1](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19),[2](https://link.springer.com/article/10.1007/s00145-018-9280-5), [3](https://eprint.iacr.org/2019/485.pdf) for details.[RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic)  has provided high speed implementations for all building blocks related to pairing protocols on these curves. Timing results can be obtained by performing the following commands：
+ 
+  1. mkdir build && cd build 
   2. ../preset/<preset>.sh ../
   3. make
   4. cd bin 
   5. ./bench_pc.c
   
   Another 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$ is BLS24-P315, which was implemented in the latest  [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) 
+  
+  
+ Running as follows, we can compare BW13-P310 to BN-P446, BLS12-P446 and BLS24-P315 for the performance of pairing computation, hashing to $\mathbb{G}_1$ and $\mathbb{G}_2$, group expontiations in  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$, and subgroup membership testings for  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$.
+  
   
   
   

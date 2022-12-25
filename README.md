@@ -37,7 +37,7 @@ The main source code of our algorithms are distributed in different folders.  Th
   3. make
   4. cd bin 
   5. ./bench_pc_bw13.c
-
+ * With the development of NFS, BN-P446 and BLS12-P446 are two best choices at 128 bit security level in BN and BLS12 families, respectievly[Wiki](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19).
   
 
 

@@ -29,8 +29,7 @@ The main source code of our algorithms are distributed in different folders.  Th
 * gt_is_valid_bw13(fp13_t h0):Checking whether $h0$ is a point of $\mathbb{G}_T$.
 
 ### Benckmarks and comparisons
-##  Benckmarks 
-Timing results can be obtained by performing the following comggnds：
+* Timing results can be obtained by performing the following comggnds：
   
 
   1. mkdir build && cd build 

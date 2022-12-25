@@ -2,10 +2,10 @@
 
 Based on the famous [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) we implemented all building blocks related to pairing-based protocols on BW13-P310, including
 
- hashing to $\mathbb{G}_2$ on the BW13-P310 curve with two methods. The first method (Method I) is seen as a generlized  Fuentes et al method. 
- The second one (Method II) is a further optimiation based on the first one.
-The preset file can be found in  <preset> folder in the name of x64-pbc-bw310.sh<br/>
-
+ * pairing computation.
+*  hashing to  $\mathbb{G}_1$ and $\mathbb{G}_2$.
+*  group expontiations in  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$.
+* subgroup membership testings for  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$.
 ### Requirements
 
 The build process requires the [CMake](https://cmake.org/) cross-platform build system. The [GMP](https://gmplib.org/) library is also needed in our benchmarks.

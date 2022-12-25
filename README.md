@@ -31,8 +31,6 @@ The main source code of our algorithms are distributed in different folders.  Th
 ### Benckmarks and comparisons
 * Benckmarks: Timing results can be obtained by performing the following commands：
 
-  
-
   1. mkdir build && cd build 
   2. ../preset/x64-pbc-bw310.sh ../
   3. make
@@ -51,7 +49,7 @@ The main source code of our algorithms are distributed in different folders.  Th
   
  Running as follows, we can compare BW13-P310 to BN-P446, BLS12-P446 and BLS24-P315 for the performance of pairing computation, hashing to $\mathbb{G}_1$ and $\mathbb{G}_2$, group expontiations in  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$, and subgroup membership testings for  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$. We benchmakred on a 64-
 bit Intel Core i9-12900K @2.3GHz processor running Ubuntu 22.04.1 LTS with
-TurboBoost and hyper-threading features disabled. Clock cycles are obtain averaged over 10,000 executions. 
+TurboBoost and hyper-threading features disabled. Clock cycles are obtain averaged over 10,000 executions. Results are given in the following figures.
   
   ![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/A.png)
   ![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/B.png)

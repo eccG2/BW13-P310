@@ -1,6 +1,6 @@
 ### Algorithms
 
-Based on the famous [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) we implemented:
+Based on the famous [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) we implemented all building blocks related to pairing-based protocols on BW13-P310, including
 
  hashing to $\mathbb{G}_2$ on the BW13-P310 curve with two methods. The first method (Method I) is seen as a generlized  Fuentes et al method. 
  The second one (Method II) is a further optimiation based on the first one.

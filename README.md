@@ -18,25 +18,21 @@ Instructions for building the library can be found in the [Wiki](https://github.
 ### Source code
   
 The main source code of our algorithms are distributed in different folders.  The main functions are:
+* pp_map_sup_oatep_k13(fp13_t r, ep_t p, ep13_t q): input  $p\in \mathbb{G}_1$ and $q\in \mathbb{G}_2$, output $e(p,q)$.4
+* ep13_map(ep_t p, const uint8_t *msg, int len) : hashing to $\mathbb{G}_1$
+* ep13_map(ep13_t p, const uint8_t *msg, int len) : hashing to $\mathbb{G}_2$
 
-* ep13_map(ep13_t p, const uint8_t *msg, int len) :Maps a byte array to a point of BW13-P310.
-* ep13_cof_fuentes(ep13_t r, ep13_t p) : Given a random point p , hashing p to $\mathbb{G}_2$ using Method I.
-* ep13_cof(ep13_t r, ep13_t p):Given a random point p , hashing p to $\mathbb{G}_2$ using Method II.
 
- hashing to $\mathbb{G}_2$  can be accomplished by perfroming ep13_map()+ep13_cof_fuentes() or  ep13_map()+ep13_cof.
-
- ### Tests and Benckmarks
-The functions for tests are presented in [test_hash.c](https://github.com/eccdaiy39/hashing/tree/master/hashing-relic/test/test_hash.c).
- The functions for benckmarking are presented in [bench_hash.c](https://github.com/eccdaiy39/hashing/tree/master/hashing-relic/bench/bench_hash.c)
- Testing and Timing results can be obtained by performing the following commands：
+ ###Benckmarks
+Timing results can be obtained by performing the following commands：
   
 
   1. mkdir build && cd build 
   2. ../preset/x64-pbc-bw310.sh ../
   3. make
   4. cd bin 
-  5. ./test_hash
-  6. ./bench_hash
+  5. ./bench_pc_bw13.c
+
   
 
 

@@ -37,7 +37,7 @@ The main source code of our algorithms are distributed in different folders.  Th
   3. make
   4. cd bin 
   5. ./bench_pc_bw13.c
- * With the development of NFS, BN-P446 and BLS12-P446 are two best choices at 128 bit security level in BN and BLS12 families, respectievly[Wiki](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19).
+ * With the development of NFS, the parameters of curves have to upated to really reach the 128-bit security level. BW13-P310 is 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$. BN-P446 and BLS12-P446 are two mainstream curves  in BN and BLS12 families the 128-bit security level, respectievly. see [1](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19),[2](https://link.springer.com/article/10.1007/s00145-018-9280-5), [3](https://eprint.iacr.org/2019/485.pdf) for details.
   
 
 

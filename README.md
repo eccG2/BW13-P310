@@ -18,7 +18,7 @@ Instructions for building the library can be found in the [Wiki](https://github.
 ### Source code
   
 The main source code of our algorithms are distributed in different folders.  The main functions are:
-* pp_map_sup_oatep_k13(fp13_t r, ep_t p, ep13_t q): given $p\in  \mathbb{G}_1 and $q\in \mathbb{G}_2$,  computing $r=e(p,q)$
+* pp_map_sup_oatep_k13(fp13_t r, ep_t p, ep13_t q): given $p\in  \mathbb{G}_1 and $q\in \mathbb{G}_2$,  computing $r=e(p,q)$ 
 * ep_map(ep_t p, const uint8_t *msg, int len) : hashing to $\mathbb{G}_1$
 * ep13_map(ep13_t p, const uint8_t *msg, int len) : hashing to $\mathbb{G}_2$
 *ep_mul(ep_t q, ep_t p, bn_t k) : given a random point $p\in \mathbb{G}_1$ and a random scalar $k$, computing $q=[k]p$

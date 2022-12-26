@@ -24,9 +24,9 @@ The main source code of our algorithms are distributed in different folders.  Th
 * ep_mul(ep_t q, ep_t p, bn_t k) : given a random point $p\in \mathbb{G}_1$ and a random scalar $k$, computing $q=[k]p$
 * ep13_mul(ep13_t q, ep13_t p, bn_t k) : given a random point $p\in \mathbb{G}_2$ and a random scalar $k$, computing $q=[k]p$
 * fp13_exp_gt(fp13_t h1, fp13_t h0,  bn_t k) : given a random point $h0\in \mathbb{G}_T$ and a random exp $k$, computing $h1={h0}^k$
-* g1_is_valid_bw13(ep_t p): Checking whether $p$ is a point of $\mathbb{G}_1$.
-* g2_is_valid_bw13(ep13_t q): Checking whether $q$ is a point of $\mathbb{G}_2$.
-* gt_is_valid_bw13(fp13_t h0):Checking whether $h0$ is a element of $\mathbb{G}_T$.
+* g1_is_valid_bw13(ep_t p): Checking whether $p$ is a point of $\mathbb{G}_1$ or not.
+* g2_is_valid_bw13(ep13_t q): Checking whether $q$ is a point of $\mathbb{G}_2$ or not.
+* gt_is_valid_bw13(fp13_t h0):Checking whether $h0$ is a element of $\mathbb{G}_T$ or not.
 
 ### Benckmarks and comparisons
 * Benckmarks: Timing results can be obtained by performing the following commands：

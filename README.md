@@ -5,7 +5,7 @@ Based on the famous [RELIC cryptographic toolkit](https://github.com/relic-toolk
  * pairing computation.
 *  hashing to  $\mathbb{G}_1$ and $\mathbb{G}_2$.
 *  group expontiations in  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$.
-* subgroup membership testings for  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$.
+*  membership testings for  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$.
 ### Requirements
 
 The build process requires the [CMake](https://cmake.org/) cross-platform build system. The [GMP](https://gmplib.org/) library is also needed in our benchmarks.
@@ -28,32 +28,23 @@ The main source code of our algorithms are distributed in different folders.  Th
 * g2_is_valid_bw13(ep13_t q): Checking whether $q$ is a point of $\mathbb{G}_2$ or not.
 * gt_is_valid_bw13(fp13_t h0):Checking whether $h0$ is a element of $\mathbb{G}_T$ or not.
 
-### Benckmarks and comparisons
-* Benckmarks: Timing results can be obtained by performing the following commands：
+### Testings, benckmarks and comparisons
+* Testings and benckmarks: Function testings and benckmarking can be done by performing the following commands：
 
     1. mkdir build && cd build 
     2. ../preset/x64-pbc-bw310.sh ../
     3. make
     4. cd bin 
-    5. ./bench_pc_bw13.c
+    5. ./test_bw13  (This is to check that our implementation is corrret)
+    5. ./bench_pc_bw13.c (This is to obtain clock cycles of involved operations on BW13-P310)
   
- * Comparisons: With the development of NFS, the parameters of curves have to upated to really reach the 128-bit security level. BW13-P310 is 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$. BN-P446 and BLS12-P446 are two mainstream curves in BN and BLS12 families the 128-bit security level, respectievly. See [1](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19), [2](https://link.springer.com/article/10.1007/s00145-018-9280-5), [3](https://eprint.iacr.org/2019/485.pdf) for details. [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) has provided high speed implementations for all building blocks related to pairing protocols on these curves. Timing results can be obtained by performing the following commands：
+ * Comparisons: With the development of NFS, the parameters of curves have to upated to really reach the 128-bit security level. BW13-P310 is 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$. BN-P446 and BLS12-P446 are two mainstream curves in BN and BLS12 families the 128-bit security level, respectievly. See [1](https://link.springer.com/chapter/10.1007/978-3-030-45388-6_19), [2](https://link.springer.com/article/10.1007/s00145-018-9280-5), [3](https://eprint.iacr.org/2019/485.pdf) for details. BLS24-P315 is another interesting curve at this security level that provides fast group exponentiation in$\mathbb{G}_1$. [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) has provided high speed implementations for all building blocks related to pairing protocols on these curves. Timing results can be obtained by performing the following commands：
  
    1. mkdir build && cd build 
    2. ../preset/ < preset >.sh ../
    3. make
    4. cd bin 
    5. ./bench_pc.c
-  
-  Another 128-bit secure curve that provides fast multiplication in $\mathbb{G}_1$ is BLS24-P315, which was implemented in the latest  [RELIC cryptographic toolkit](https://github.com/relic-toolkit/relic) 
-  
-  
- Running as follows, we can compare BW13-P310 to BN-P446, BLS12-P446 and BLS24-P315 for the performance of pairing computation, hashing to $\mathbb{G}_1$ and $\mathbb{G}_2$, group expontiations in  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$, and subgroup membership testings for  $\mathbb{G}_1$, $\mathbb{G}_2$ and  $\mathbb{G}_T$. We benchmakred on a 64-
-bit Intel Core i9-12900K @2.3GHz processor running Ubuntu 22.04.1 LTS with
-TurboBoost and hyper-threading features disabled. Clock cycles are obtain averaged over 10,000 executions. Results are given in the following figures.
-  
-  ![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/A.png)
-  ![image](https://github.com/eccG2/BW13-P310/blob/master/IMG/B.png)
   
   
   
